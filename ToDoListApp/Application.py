@@ -21,7 +21,6 @@ class Application:
     
         adding_menu = tkinter.Menu(menu_bar, tearoff=0)
         menu_bar.add_cascade(label="Add", menu=adding_menu)
-    
         adding_menu.add_command(label="New task", command=lambda: task_manager.add_task("New task...")) #adding a callback
     
         window.mainloop()
