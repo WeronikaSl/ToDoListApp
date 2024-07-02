@@ -5,7 +5,7 @@ class TaskManager:
     
     def __init__(self, window):
         self.frame_for_tasks = tkinter.Frame(window)
-        saved_data = FileHandler.read_from_file()
+        saved_data = FileHandler.FileHandler().read_from_file()
         for line in saved_data:
             self.add_task(line)
     
@@ -28,7 +28,6 @@ class TaskManager:
         task_content.insert(0,task_text)
         task_content.pack(side=tkinter.RIGHT)
         
-    
     def remove_task(self, task_frame):
         task_frame.destroy()
         
