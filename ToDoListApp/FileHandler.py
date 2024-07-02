@@ -1,5 +1,4 @@
 class FileHandler:
-    
     def write_to_file(self, data_to_save):
         f = open("saved_data.txt", "w")
         for line in data_to_save:

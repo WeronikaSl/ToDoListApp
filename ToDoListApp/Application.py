@@ -3,7 +3,6 @@ import TaskManager
 import FileHandler
 
 class Application:
-    
     def run(self):
         window = tkinter.Tk()
         window.geometry("420x720")
@@ -11,7 +10,7 @@ class Application:
         menu_bar = tkinter.Menu(window)
         window.config(background="#1D54B6", menu=menu_bar)
     
-        label = tkinter.Label(window, text="Todo:", font=("Arial",30), fg="#1D54B6", relief=tkinter.SUNKEN, bd=10)
+        label = tkinter.Label(window, text="Todo:", font=(30), fg="#1D54B6", relief=tkinter.SUNKEN, bd=10)
         label.pack()
     
         task_manager = TaskManager.TaskManager(window)

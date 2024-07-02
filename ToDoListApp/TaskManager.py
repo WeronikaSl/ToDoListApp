@@ -2,7 +2,6 @@ import tkinter
 import FileHandler
 
 class TaskManager:
-    
     def __init__(self, window):
         self.frame_for_tasks = tkinter.Frame(window)
         saved_data = FileHandler.FileHandler().read_from_file()
@@ -30,4 +29,3 @@ class TaskManager:
         
     def remove_task(self, task_frame):
         task_frame.destroy()
-        
