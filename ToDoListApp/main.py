@@ -21,7 +21,7 @@ def main():
     
     task_manager = TaskManager.TaskManager(window)
     
-    adding_menu.add_command(label="New task", command=task_manager.addTask)
+    adding_menu.add_command(label="New task", command=task_manager.add_task) #adding a callback
     
     window.mainloop()
     
